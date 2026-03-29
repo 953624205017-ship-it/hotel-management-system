@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VIDEO</title>
+<style>
+body{
+background-color:cyan;
+text-color:black;
+text-align:center;
+}
+</style>
+<script>
+function show()
+{
+let user=document.getElementById("user").value;
+let pass=document.getElementById("pass").value;
+if(user=="kani" && pass=="1234"){
+alert("WELCOME TO MY WEBPAGE");
+}
+else{
+alert("Invalid UserName or Password");
+}
+}
+</script>
+</head>
+<body>
+<nav id="login" class="active">
+<header>
+<nav id="menu">
+<button onclick="showPage("login")">Home</button>
+</nav>
+<h1 style='background-color:white'>SITHIRAI THIRUVIZHA<h1>
+</header><br><br>
+<video height="320" width="980" controls autoplay muted>
+<source src="VID-20250512-WA0002.MP4" ></source>
+</video><br><br>
+<section>
+<nav id="login" class="active">
+<div class="login-box">
+<form>
+USER NAME:<input type="text" placeholder="Enter Your user name" id="user"><br><br>
+PASSWORD:<input type="password" placeholder="Enter Strong Password"  id="pass"><br><br>
+<button onclick="show()">login</button>
+</form>
+</div>
+</section>
+</nav>
+<p style='background-color:white' >This is my first web using video tag<p>
+</section>
+</body>
+</html>
